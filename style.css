@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #a2d4f3, #d0f0fd);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: background 1s ease-in-out;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 25px;
+  padding: 40px 50px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #2b2d42;
+}
+
+.search-box {
+  margin-bottom: 25px;
+}
+
+.search-box input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  width: 60%;
+  margin-right: 10px;
+  font-size: 1em;
+}
+
+.search-box button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #0096c7;
+  color: white;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background-color: #0077b6;
+}
+
+.unit-toggle {
+  margin-bottom: 15px;
+  font-size: 1em;
+}
+
+.unit-toggle select {
+  padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-left: 10px;
+  font-size: 1em;
+}
+
+.info h2 {
+  font-size: 2.5em;
+  margin: 10px 0;
+  color: #023e8a;
+}
+
+.info p {
+  margin: 5px 0;
+  font-size: 1.1em;
+}
+
+.credit {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.weather-icon svg {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
